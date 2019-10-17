@@ -1,0 +1,35 @@
+---
+title: "Dog Names Application"
+author: "Amanda Mae"
+date: "10/17/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## How many dogs in NYC share your dog's name?
+
+- **There are more the 600,000 dogs registered in NYC! Have you ever wondered how many of them share the same name?**
+- **Do you have a dog? What is your dog's name? How many dog's have the same name as your dog?**
+- **The answers to all these questions can be had by using my awesome app!**
+
+
+## The App!
+
+- Using the Shiny App builder, the application begins by asking users to imput the name of their dog (in caps) into the text box. 
+- *It is important to use all caps because the dog liscense data is in all caps*
+
+## The Data!
+
+- The application connects to the NYC Dog Liscensing data, found at https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp , a site within NYC Open data. 
+- The NYC dog licensing dataset includes a ro for every dog registered in NYC and includes information on the dog's breed, age, and name. 
+-All data is supplied by pet owners, and therefore subject to some user error, like incorrect inputs. 
+
+## The Results!
+
+- The application runs the below pasted code to count the number of rows in the dataset with the same name input as the dog name entered. 
+- length(which(dog_dataAnimalName== inputdog_name))
+- *Enjoy!*
